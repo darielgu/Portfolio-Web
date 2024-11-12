@@ -1,12 +1,18 @@
 import styles from "./DarielStyles.module.css";
 import darielpng from "../../assets/jpeg-transformed.png";
-import themeIcon from "../../assets/sun.svg";
-import linkedInIcon from "../../assets/linkedin-light.svg";
-import githubIcon from "../../assets/github-light.svg";
+import sun from "../../assets/sun.svg";
+import moon from "../../assets/moon.svg";
+import LinkedInLight from "../../assets/linkedin-light.svg";
+import LinkedInDark from "../../assets/linkedin-dark.svg";
+import GithubLight from "../../assets/github-light.svg";
+import GithubDark from "../../assets/github-dark.svg";
 import CV from "../../assets/Resume.pdf";
 import { useTheme } from "/src/common/ThemeContect.jsx";
 function Dariel() {
   const { theme, toggleTheme } = useTheme();
+  const themeIcon = theme === "light" ? sun : moon;
+  const linkedInIcon = theme === "light" ? LinkedInLight : LinkedInDark;
+  const githubIcon = theme === "light" ? GithubLight : GithubDark;
 
   return (
     <section id="Dariel" className={styles.Container}>
@@ -17,6 +23,7 @@ function Dariel() {
           className={styles.pfp}
         />
         <img
+          onClick={toggleTheme}
           src={themeIcon}
           alt="Color Mode Icon"
           className={styles.colorMode}

@@ -1,0 +1,35 @@
+:root {
+  --background-color: white;
+  --btn-color: #0987f2;
+  --btn-text-color: #0987f2;
+  --project-card-bg: #ffffff00;
+  --text-color: #222;
+  --form-text-color: #555;
+  --footer-text-color: #888;
+}
+[data-them="dark"] {
+  --background-color: rgb(0, 0, 0);
+  --btn-color: hsl(210, 100%, 99%);
+  --btn-text-color: #0987f2;
+  --project-card-bg: #fff;
+  --text-color: #fff;
+  --form-text-color: #fff;
+  --footer-text-color: #bbb;
+}
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 60px;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+h1,
+h2,
+h3,
+p {
+  color: var(--text-color);
+}
