@@ -31,7 +31,7 @@ function Dariel() {
       </div>
       <div className={styles.info}>
         <h1>Dariel</h1>
-        <br />
+
         <h1>Gutierrez</h1>
         <h2>Computer Science Student</h2>
         <span>
@@ -45,7 +45,7 @@ function Dariel() {
             <img src={githubIcon} alt="github-Icon" />
           </a>
         </span>
-        <p>
+        <p className={styles.description}>
           I am an aspiring Full-Stack Developer with a passion for technology. I
           am in my second year of my Bachelor's degree in Computer Science at
           San Diego State University. I have experience working with JavaScript,
@@ -53,7 +53,7 @@ function Dariel() {
           reach out to me on LinkedIn or through email!
         </p>
         <a href={CV} download>
-          <button className="hover">View CV</button>
+          <button className="hover">View Resume</button>
         </a>
       </div>
     </section>

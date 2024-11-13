@@ -1,16 +1,16 @@
 :root {
   --background-color: white;
   --btn-color: #0987f2;
-  --btn-text-color: #0987f2;
+  --btn-text-color: #e7e7e7;
   --project-card-bg: #ffffff00;
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
 }
-[data-them="dark"] {
+[data-theme="dark"] {
   --background-color: rgb(0, 0, 0);
   --btn-color: hsl(210, 100%, 99%);
-  --btn-text-color: #0987f2;
+  --btn-text-color: #030404;
   --project-card-bg: #fff;
   --text-color: #fff;
   --form-text-color: #fff;
@@ -30,6 +30,38 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+h2,
+h3,
+p,
+ul {
+  font-family: "Roboto mono", monospace;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+}
+h2,
+h3 {
+  font-size: 20px;
+}
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+}
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.sectionTitle {
+  margin-bottom: 30px;
+}
+.hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
 }

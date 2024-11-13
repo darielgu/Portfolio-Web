@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+
+  img {
+    max-width: 250px;
+    align-self: center;
+    background-color: var(--project-card-bg);
+    border-radius: 15px;
+    transition: transform 200ms ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+  a {
+    width: fit-content;
+    text-decoration: none;
+    color: #222;
+    transition: transform 200ms ease-in-out;
+  }
+  a:hover {
+    transform: scale(1.1s);
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: var(--text-color);
+    font: "Rubik", monospace;
+  }
+}
